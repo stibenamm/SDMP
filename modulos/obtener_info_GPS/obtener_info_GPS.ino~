@@ -37,13 +37,13 @@ void loop() {
     Serial.print(sim808.GPSdata.second);
     Serial.print(":");
     Serial.println(sim808.GPSdata.centisecond);
-    Serial.print("latitude :");
+    Serial.print("latitud :");
     Serial.println(sim808.GPSdata.lat);
-    Serial.print("longitude :");
+    Serial.print("longitud :");
     Serial.println(sim808.GPSdata.lon);
-    Serial.print("speed_kph :");
+    Serial.print("kph :");
     Serial.println(sim808.GPSdata.speed_kph);
-    Serial.print("heading :");
+    Serial.print("cabecera :");
     Serial.println(sim808.GPSdata.heading);
     Serial.println();
 
