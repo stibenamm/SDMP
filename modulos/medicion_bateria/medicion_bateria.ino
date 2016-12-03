@@ -36,7 +36,7 @@ void loop(){
        vPin=0.0;
     } 
 
-   if(vPin > 5){
+   if(vPin > 7){
     digitalWrite(ledOut, HIGH);
   } else {
     digitalWrite(ledOut, LOW);
