@@ -112,6 +112,9 @@ void loop() {
       
                 //id
                 int id = 1;
+                fn= "oscar";
+                ln = "jimenez";
+                pn= "87832157";
                 createRecord(id, fn, ln, pn);
                 break;
             }
@@ -120,6 +123,7 @@ void loop() {
                 
                 Serial.print("Ingrese el número de registro: ");
                 int id = Serial.read();
+                id= 1;
                 Serial.println(id);
         
                 selectRecord(id);
@@ -152,7 +156,7 @@ void loop() {
       
             case '6': {//total de registros
               
-                db.count();
+                Serial.println(db.count());
                 
                 break;
             }
@@ -169,6 +173,7 @@ void loop() {
         }
         printMenu();
     }  
+    delay(1000);
 }
 
 void printMenu(){
